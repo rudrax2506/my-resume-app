@@ -32,7 +32,6 @@ body.light-theme {
   transition: background-color 0.3s ease;
 }
 
-/* Theme-specific container backgrounds */
 body.dark-theme .container {
   background-color: #2c2f3d;
 }
@@ -69,7 +68,7 @@ body.light-theme .container {
   transition: transform 0.2s ease;
 }
 
-/* Larger, more responsive icons */
+/* Slightly larger icons */
 .header-icons img {
   width: 40px;
   height: 40px;
@@ -80,16 +79,11 @@ body.light-theme .container {
   transform: scale(1.1);
 }
 
-/* Section & Paragraphs */
+/* Sections & Paragraphs */
 .section {
   margin-bottom: 30px;
 }
 
-p {
-  margin-bottom: 15px;
-}
-
-/* Section Headings */
 .section h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
@@ -97,6 +91,10 @@ p {
   padding-bottom: 5px;
   color: #14d3ec;
   border-bottom: 2px solid #14d3ec;
+}
+
+p {
+  margin-bottom: 15px;
 }
 
 /* Lists */
@@ -109,6 +107,24 @@ ul {
 
 ul li {
   margin-bottom: 8px;
+}
+
+/* Education Titles & Dates */
+.edu-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+/* Make the subheading appear more prominent by default */
+.edu-item-header strong {
+  font-size: 1.2em;
+}
+
+.edu-dates {
+  font-style: italic;
+  margin-left: 10px;
 }
 
 /* Work Experience */
@@ -124,22 +140,21 @@ ul li {
   margin-bottom: 10px;
 }
 
-/* Links */
-a {
-  text-decoration: none;
-  transition: color 0.8s ease;
+/* Each job heading */
+.work-experience .job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
-body.dark-theme a {
-  color: #14d3ec;
+.work-experience .job-header strong {
+  font-size: 1.2em; /* Keep job title larger */
 }
 
-body.light-theme a {
-  color: #14d3ec;
-}
-
-a:hover {
-  text-decoration: underline;
+.job-dates {
+  font-style: italic;
+  margin-left: 10px;
 }
 
 /* Theme Toggle Button */
@@ -161,35 +176,25 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Job Header */
-.work-experience .job-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Links */
+a {
+  text-decoration: none;
+  transition: color 0.8s ease;
 }
 
-.work-experience .job-header strong {
-  font-size: 1.1em; /* Slightly larger job title */
+body.dark-theme a {
+  color: #14d3ec;
 }
 
-.job-dates {
-  font-style: italic;
-  margin-left: 10px;
+body.light-theme a {
+  color: #14d3ec;
 }
 
-/* Education Header */
-.edu-item-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+a:hover {
+  text-decoration: underline;
 }
 
-.edu-dates {
-  font-style: italic;
-  margin-left: 10px;
-}
-
-/* ---------- Responsive Design for Mobile ---------- */
+/* ---------- Responsive Design for Mobile (max-width: 600px) ---------- */
 @media screen and (max-width: 600px) {
   /* Container & General Adjustments */
   .container {
@@ -197,28 +202,35 @@ a:hover {
     padding: 15px;
   }
 
-  /* Make headings scale down slightly on small screens, but not too small */
+  /* Keep the main heading large enough */
   .header h1 {
     font-size: 1.8em;
   }
 
+  /* Keep section headings nearly the same */
   .section h2 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
-  /* Icons slightly smaller on very small devices, if needed */
+  /* Keep subheadings (like job titles, degree titles) larger */
+  .edu-item-header strong,
+  .work-experience .job-header strong {
+    font-size: 1.2em; /* or 1.3em if you want them even bigger */
+  }
+
+  /* Icons slightly smaller if needed */
   .header-icons img {
     width: 35px;
     height: 35px;
   }
 
-  /* Stack header icons vertically if space is tight */
+  /* Possibly stack the header icons if space is tight */
   .header-icons {
     flex-direction: column;
     gap: 15px;
   }
 
-  /* Work experience job header on smaller screens */
+  /* Adjust job header layout on mobile */
   .work-experience .job-header {
     flex-direction: column;
     align-items: flex-start;
@@ -229,7 +241,7 @@ a:hover {
     margin-left: 0;
   }
 
-  /* Education header on smaller screens */
+  /* Adjust education item layout on mobile */
   .edu-item-header {
     flex-direction: column;
     align-items: flex-start;
@@ -240,7 +252,7 @@ a:hover {
     margin-left: 0;
   }
 
-  /* Reduce spacing on list items if they appear too "spread out" */
+  /* Slightly reduce spacing between bullet points for smaller screens */
   ul li {
     margin-bottom: 5px;
   }

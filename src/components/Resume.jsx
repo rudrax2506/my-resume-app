@@ -154,7 +154,6 @@ export default function Resume() {
               <strong>Retail Sales Assistant (Supercheap Auto)</strong>
               <span className="job-dates">July 2024 – Present</span>
             </div>
-            <div>Job Duties and Responsibilities</div>
             <ul>
               <li>Provide exceptional customer service.</li>
               <li>Assist customers with vehicle-related queries.</li>
@@ -167,7 +166,6 @@ export default function Resume() {
               <strong>Retail Team Member (Coles Group)</strong>
               <span className="job-dates">June 2022 – Present</span>
             </div>
-            <div>Job Duties and Responsibilities</div>
             <ul>
               <li>Assist customers with product-related queries and manage checkouts.</li>
               <li>Stock shelves and maintain organized aisles.</li>
@@ -180,7 +178,6 @@ export default function Resume() {
               <strong>Console Operator/Storeperson (On The Run Pty. Ltd.)</strong>
               <span className="job-dates">May 2024 – Aug 2024</span>
             </div>
-            <div>Job Duties and Responsibilities</div>
             <ul>
               <li>Provided exceptional customer service.</li>
               <li>Operated the POS system.</li>
@@ -193,7 +190,6 @@ export default function Resume() {
               <strong>Admin/Customer Service Assistant (Dumra Consulting Adelaide)</strong>
               <span className="job-dates">Nov 2022 – Mar 2024</span>
             </div>
-            <div>Job Duties and Responsibilities</div>
             <ul>
               <li>Maintained client records and performed follow-ups.</li>
               <li>Scheduled appointments and responded to customer queries.</li>
