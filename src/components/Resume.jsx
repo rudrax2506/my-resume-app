@@ -107,7 +107,7 @@ export default function Resume() {
           </li>
           <li><strong>Data Analysis & Tools:</strong> Big Data, Data Analytics, Power BI, Excel</li>
           <li>
-            <strong>Development Practices:</strong> Agile Methodology, Documentation, Collaboration & Commuication
+            <strong>Development Practices:</strong> Agile Methodology, Documentation, Collaboration & Communication
           </li>
         </ul>
       </div>
@@ -143,7 +143,6 @@ export default function Resume() {
           <li>Customer Service Excellence</li>
           <li>Data Entry</li>
           <li>Phone Etiquette</li>
-
         </ul>
       </div>
 

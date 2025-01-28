@@ -1,9 +1,11 @@
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Base Styles */
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.8;
@@ -20,6 +22,7 @@ body.light-theme {
   color: #333333;
 }
 
+/* Container */
 .container {
   max-width: 800px;
   margin: 20px auto;
@@ -29,6 +32,7 @@ body.light-theme {
   transition: background-color 0.3s ease;
 }
 
+/* Theme-specific container backgrounds */
 body.dark-theme .container {
   background-color: #2c2f3d;
 }
@@ -37,6 +41,7 @@ body.light-theme .container {
   background-color: #ffffff;
 }
 
+/* Header */
 .header {
   text-align: center;
   margin-bottom: 30px;
@@ -48,6 +53,7 @@ body.light-theme .container {
   margin-bottom: 20px;
 }
 
+/* Icon Container */
 .header-icons {
   display: flex;
   justify-content: center;
@@ -63,23 +69,27 @@ body.light-theme .container {
   transition: transform 0.2s ease;
 }
 
+/* Larger, more responsive icons */
 .header-icons img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
 
 .header-icons a:hover {
   transform: scale(1.1);
 }
 
-p {
-  margin-bottom: 15px;
-}
-
+/* Section & Paragraphs */
 .section {
   margin-bottom: 30px;
 }
 
+p {
+  margin-bottom: 15px;
+}
+
+/* Section Headings */
 .section h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.4em;
@@ -89,6 +99,7 @@ p {
   border-bottom: 2px solid #14d3ec;
 }
 
+/* Lists */
 ul {
   list-style-type: disc;
   padding-left: 20px;
@@ -100,6 +111,7 @@ ul li {
   margin-bottom: 8px;
 }
 
+/* Work Experience */
 .work-experience > ul {
   list-style-type: none;
   padding-left: 0;
@@ -108,9 +120,11 @@ ul li {
 .work-experience ul ul {
   list-style-type: disc;
   padding-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
-
+/* Links */
 a {
   text-decoration: none;
   transition: color 0.8s ease;
@@ -128,6 +142,7 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Theme Toggle Button */
 .theme-toggle {
   display: inline-block;
   margin-top: 20px;
@@ -146,10 +161,15 @@ a:hover {
   transform: scale(1.05);
 }
 
+/* Job Header */
 .work-experience .job-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.work-experience .job-header strong {
+  font-size: 1.1em; /* Slightly larger job title */
 }
 
 .job-dates {
@@ -157,7 +177,7 @@ a:hover {
   margin-left: 10px;
 }
 
-
+/* Education Header */
 .edu-item-header {
   display: flex;
   justify-content: space-between;
@@ -169,18 +189,36 @@ a:hover {
   margin-left: 10px;
 }
 
-/* ---------- This code is for Responsive Design ---------- */
+/* ---------- Responsive Design for Mobile ---------- */
 @media screen and (max-width: 600px) {
+  /* Container & General Adjustments */
   .container {
     margin: 10px;
     padding: 15px;
   }
 
+  /* Make headings scale down slightly on small screens, but not too small */
+  .header h1 {
+    font-size: 1.8em;
+  }
+
+  .section h2 {
+    font-size: 1.2em;
+  }
+
+  /* Icons slightly smaller on very small devices, if needed */
+  .header-icons img {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* Stack header icons vertically if space is tight */
   .header-icons {
     flex-direction: column;
     gap: 15px;
   }
 
+  /* Work experience job header on smaller screens */
   .work-experience .job-header {
     flex-direction: column;
     align-items: flex-start;
@@ -191,6 +229,7 @@ a:hover {
     margin-left: 0;
   }
 
+  /* Education header on smaller screens */
   .edu-item-header {
     flex-direction: column;
     align-items: flex-start;
@@ -199,5 +238,10 @@ a:hover {
   .edu-dates {
     margin-top: 5px;
     margin-left: 0;
+  }
+
+  /* Reduce spacing on list items if they appear too "spread out" */
+  ul li {
+    margin-bottom: 5px;
   }
 }
