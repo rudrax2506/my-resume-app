@@ -98,8 +98,8 @@ export default function Resume() {
       <div className="section">
         <h2>Technical Skills</h2>
         <ul>
-          <li><strong>Programming Languages:</strong> Java, Python (Pandas), C#, C++</li>
-          <li><strong>Web Development:</strong> HTML, CSS, JavaScript, MERN Stack</li>
+          <li><strong>Programming Languages:</strong> Java, Python, C#, C++</li>
+          <li><strong>Web Development:</strong> MERN Stack, HTML, CSS, JavaScript, RESTful APIs</li>
           <li><strong>Database Management:</strong> SQL, MongoDB, Neo4J, MySQL, XAMPP</li>
           <li>
             <strong>Data Science & Analysis:</strong> Data Visualization (Matplotlib),
@@ -107,7 +107,7 @@ export default function Resume() {
           </li>
           <li><strong>Data Analysis & Tools:</strong> Big Data, Data Analytics, Power BI, Excel</li>
           <li>
-            <strong>Development Practices:</strong> Agile Methodology, RESTful APIs, Full-Stack Development
+            <strong>Development Practices:</strong> Agile Methodology, Documentation, Collaboration & Commuication
           </li>
         </ul>
       </div>
@@ -134,15 +134,16 @@ export default function Resume() {
       <div className="section">
         <h2>Core Competencies</h2>
         <ul>
-          <li>Customer Service Excellence</li>
-          <li>Data Entry</li>
-          <li>Phone Etiquette</li>
-          <li>Attention to Detail</li>
-          <li>Time Management</li>
           <li>Team Collaboration</li>
           <li>Problem-Solving</li>
           <li>Communication Skills</li>
           <li>Multitasking</li>
+          <li>Time Management</li>
+          <li>Attention to Detail</li>
+          <li>Customer Service Excellence</li>
+          <li>Data Entry</li>
+          <li>Phone Etiquette</li>
+
         </ul>
       </div>
 
